@@ -14,7 +14,6 @@ import {
 } from 'react-native';
 
 const googleApi = 'https://maps.googleapis.com/maps/api/geocode/json?address=';
-const mapsApi = 'AIzaSyCFN3loimfsY5PQxeA7ERHx6fHH1fIc3BY';
 
 class Find extends React.Component {
   state = {
