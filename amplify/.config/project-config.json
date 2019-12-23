@@ -1,0 +1,17 @@
+{
+    "projectName": "bballFinder",
+    "version": "2.0",
+    "frontend": "javascript",
+    "providers": [
+        "awscloudformation"
+    ],
+    "javascript": {
+        "framework": "react-native",
+        "config": {
+            "SourceDir": "/",
+            "DistributionDir": "/",
+            "BuildCommand": "npx react-native run-ios",
+            "StartCommand": "npx react-native run-ios"
+        }
+    }
+}

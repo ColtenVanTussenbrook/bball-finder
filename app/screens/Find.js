@@ -2,6 +2,7 @@
 import React from 'react';
 import Geolocation from '@react-native-community/geolocation';
 import FindGames from '../components/FindGames';
+import env from 'react-native-config';
 
 import {
   StyleSheet,
@@ -44,7 +45,7 @@ class Find extends React.Component {
   };
 
   getLocationZip = () => {
-    fetch(googleApi + this.state.zip + '&key=' + mapsApi)
+    fetch(googleApi + this.state.zip + '&key=' + env.MAPS_API)
       .then(response => response.json())
       .then(responseJson => {
         this.setState({
