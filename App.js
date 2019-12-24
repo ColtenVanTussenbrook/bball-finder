@@ -2,12 +2,6 @@ import React from 'react';
 import View from 'react-native';
 import AppNavigator from './app/AppNavigator';
 import { createStackNavigator } from 'react-navigation'
-import Authentication from './app/Authentication';
-import Amplify from 'aws-amplify';
-import awsconfig from './aws-exports';
-import { Authenticator } from 'aws-amplify-react-native'; // or 'aws-amplify-react-native';
-
-Amplify.configure(awsconfig);
 
 const signUpConfig = {
   hideAllDefaults: true,
@@ -30,12 +24,7 @@ const signUpConfig = {
 }
 
 const App = () => {
-  return (
-    <>
-      {/* <Authenticator usernameAttributes="email" signUpConfig={signUpConfig} /> */}
-      <AppNavigator />
-    </>
-  )
+  return <AppNavigator />
 }
 
 export default App;
