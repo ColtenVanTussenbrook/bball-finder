@@ -7,7 +7,7 @@ import { Authenticator } from 'aws-amplify-react-native'; // or 'aws-amplify-rea
 
 Amplify.configure(awsconfig);
 
-export default class Home extends React.Component {
+class Home extends React.Component {
   state = {isLoggedIn: false};
   render() {
     if (this.state.isLoggedIn) {
@@ -29,6 +29,8 @@ export default class Home extends React.Component {
     
   }
 }
+
+export default Home;
 
 const styles = StyleSheet.create({
   container: {
